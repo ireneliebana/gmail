@@ -1,0 +1,133 @@
+.main{
+    overflow: auto;
+    
+    .message_card{
+        padding: .5rem 3rem;
+        
+        .message_header{
+            
+            display:flex;
+            align-items: center;
+            .message_user{
+                display:flex;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                margin-right: 0.75rem;
+                @include full_image;
+                img {border-radius: 100px;}
+                .material-icons{
+                    font-size: 2.5rem;
+                    margin-right: .5rem;
+                }
+            }
+            .from{
+                display:flex;
+                align-items: center;
+                .user_name{
+                    text-decoration: underline;
+                    color:$grey_5;
+                }
+                .material-icons{
+                    font-size: 0.9rem;
+                    color:$grey_4;
+                }
+            }
+            .to{
+                .user_name{
+                    text-decoration: underline;
+                    color:$grey_5;
+                }
+            }
+        }
+        .message_main{
+            border-bottom: 1px solid $grey_2;
+           
+
+            .timer{
+                margin-top: .5rem;
+            }
+            .title{
+                margin-top: .5rem;
+            }
+            .content{
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+                .image{
+                    height: 200px;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    @include full_image;
+                    img {border-radius: 10px;}
+                }
+            }
+
+        }
+        .message_none{
+            text-align: center;
+            margin: 40vh 0;
+        }
+        .message_reply{
+            margin-top: 1rem;
+            form{
+                .reply{
+                    border:none;
+                    border-radius: 10px;
+                    background-color: $grey_2;
+
+                    width: 100%;
+                    height: 100px;
+                    
+                    color:white;
+                    font-size: 0.9rem;
+                    line-height: 1.2rem;
+                    font-weight: 300;
+
+                    padding: .5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            
+            .option_line{
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                .options{
+
+                }
+                .reply_button{
+                    display:flex;
+                    align-items: center;
+
+                    color: white;
+                    background-color:$azul;
+                    border-radius: 100px;
+                    border:none;
+
+                    padding: .5rem 1.25rem;
+                    .send{
+                        color: white;
+                    }
+                    .material-icons{
+                        margin-left:.25rem ;
+                        color:white;
+                    }
+
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main{
+        overflow: auto; 
+        height: 100%;
+        
+        
+        .message_card{
+            padding: .5rem 1.5rem;
+        }
+    }
+}

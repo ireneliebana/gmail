@@ -1,0 +1,76 @@
+html,
+body {
+    font-family: "Roboto", "Helvetica", Arial, sans_serif;
+    color: white;
+    min-height: 100vh;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media screen and (max-width: 1060px) {font-size: 18px;}
+    @media screen and (max-width: 750px) {font-size: 20px;}
+}
+
+//---------------------------//
+
+h1 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: "Roboto","Helvetica", Arial, sans_serif;
+    color: $grey_5;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: "Roboto","Helvetica", Arial, sans_serif;
+    color: $grey_5;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: "Roboto","Helvetica", Arial, sans_serif;
+    color: $grey_5;
+    margin-bottom: 0;
+}
+h4 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    font-family: "Roboto","Helvetica", Arial, sans_serif;
+    color: $grey_5;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    font-family: "Roboto","Helvetica", Arial, sans_serif;
+    color: $grey_5;
+    margin-bottom: 0;
+}
+h5.grey {
+    color: $grey_4;
+}
+
+h6 {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    font-weight: 500;
+    font-family: "Roboto","Helvetica", Arial, sans_serif;
+    color: $grey_5;
+    margin-bottom: 0;
+}
+h6.grey {
+    color: $grey_4;
+}
+
+
+.material-icons {
+    color: $grey_5;
+    font-size: 1rem;
+}

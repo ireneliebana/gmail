@@ -1,0 +1,25 @@
+@import "lib/vars";
+
+@import "fontface";
+@import "reset";
+
+@import "lib/typo";
+@import "lib/utils";
+
+@import "partials/layout";
+@import "partials/header";
+@import "partials/aside";
+@import "partials/main";
+
+
+
+
+
+
+* {
+    // border: 1px solid tomato;  
+}
+
+body{
+    background-color: $fondo_1;
+}   

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Gmail</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+    <link rel="icon" href="./assets/img/favicon.png"/>
+   
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="./assets/css/main.css.map">
+</head>
+
+<body>
+    <div class="app">
+
+        <!--header-->
+       
+        <header class="header_brand">
+            <div class="header_logo">
+                <div class="image">                    
+                    <img src="https://logodownload.org/wp-content/uploads/2018/03/gmail-logo.png" alt="gmail-logo" />
+                </div>
+            </div>
+        </header> 
+
+        <header class="header_searchbox">
+            <span class="material-icons">search</span>
+            <input type="text" value="Search for messages..."></input>
+            <span class="material-icons dots">more_vert</span>
+        </header>
+
+        <header class="header_nav">
+            <a class="header_nav_link" href="#" target="_self">
+                <div class="header_nav_item">
+                    <span class="material-icons">settings</span>
+                </div>
+            </a>
+            <a class="header_nav_link" href="#" target="_self">
+                <div class="header_nav_item">
+                    <span class="material-icons">apps</span>
+                </div>    
+            </a>
+            <a class="header_user" href="#" target="_self">
+                <span class="material-icons">account_circle</span>
+            </a>
+        </header>
+
+        <!--compose email-->
+        <div class="compose_email">
+            <button class="compose_email_button"> 
+                <h4>Compose Email</h4>
+                <div class="image">
+                    <img src="./assets/img/add.svg" alt="">
+                </div>
+            </button>
+
+            <div class="email_new hidden">
+                <div class="email_new_header">
+                    <h4>New Message</h4>
+                    <a class="close_email_new" href="#" target="_self">
+                        <span class="material-icons">close</span>
+                    </a>
+                </div>
+        
+                <form>
+                    <div>
+                        <input type="text" class="to" name="to" value="To"><br>
+                        <input type="text" class="subject" name="subject" value="Subject"><br>
+                    </div>
+                
+                    <textarea class="reply_message"></textarea>
+                    <div class="option_line">
+                        <div class="options">
+                            <span class="material-icons">format_underlined</span>
+                            <span class="material-icons rotate-90">attachment</span>
+                            <span class="material-icons">crop_original</span>
+                            <span class="material-icons rotate-45">link</span>
+                            <span class="material-icons">insert_emoticon</span>
+                        </div>
+                        <button type="button" class="reply_button"> 
+                            <h5 class="send">Send </h5>
+                            <span class="material-icons rotate180">keyboard_backspace</span>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!--aside-->
+        <aside class="aside_menu">
+            
+            <nav>
+                <section class="aside_section">
+                    <ul class="aside_section_list no_bullets">
+                        <!-- <li class="aside_list_item aside_list_item_inbox active">
+                            <a class="aside_list_item_link" href="#" target="_self">
+                                <span class="material-icons">inbox</span>                             
+                                <h4 class="aside_list_item_label">Inbox</h4>
+                                <h4 class="counter">3</h4>
+                            </a>
+                        </li> -->
+                    </ul> 
+                    
+                </section>
+
+                <section class="aside_section">
+                    <ul class="aside_section_list no_bullets">
+                        <li class="aside_list_item">
+                            <a class="aside_list_item_link" href="#" target="_self">
+                                <span class="material-icons">device_hub</span>                             
+                                <h4 class="aside_list_item_label">Categories</h4>
+                                <span class="material-icons arrow">arrow_drop_down</span>
+                            </a>
+                        </li>
+                    </ul> 
+                </section>
+
+                <section class="aside_folders">
+                    <header class="aside_folders_header">
+                        <h4 class="aside_folders_title">Folders</h4>
+                        <span class="material-icons">add</span>                             
+                    </header>
+
+                    <ul class="aside_section_list_folders no_bullets">
+                        <!-- <li class="aside_list_item">
+                            <a class="aside_list_item_link" href="#" target="_self">
+                                <span class="material-icons folder work">folder</span>                             
+                                <h4 class="aside_list_item_label">Work</h4>
+                                <h4 class="counter">13</h4>
+                            </a>
+                        </li> -->
+
+                        <!-- <li class="aside_list_item">
+                            <a class="aside_list_item_link" href="#" target="_self">
+                                <span class="material-icons folder personal">folder</span>                             
+                                <h4 class="aside_list_item_label">Personal</h4>
+                                <h4 class="counter">2</h4>
+                            </a>
+                        </li>
+
+                        <li class="aside_list_item">
+                            <a class="aside_list_item_link" href="#" target="_self">
+                                <span class="material-icons folder discounts">folder</span>                             
+                                <h4 class="aside_list_item_label">Discounts</h4>
+                                <h4 class="counter">7</h4>
+                            </a>
+                        </li> -->
+                    </ul> 
+
+                </section>
+ 
+                
+            </nav>        
+        </aside>
+
+        <aside class="aside_hide_menu">
+            <a class="hide_menu_link" href="#" target="_self">
+                <span class="material-icons rotate180">keyboard_arrow_right</span>                             
+                <h4 class="hide_menu_label">Hide menu</h4>
+            </a>
+        </aside>
+
+        <aside class="aside_show_menu">
+            <a class="show_menu_link" href="#" target="_self">
+                <span class="material-icons">keyboard_arrow_right</span>                             
+                <h4 class="show_menu_label">Show menu</h4>
+            </a>
+        </aside>
+
+        <aside class="aside_messages">
+            <div class="messages_class">
+                <!-- <a class="messages_class_link active" href="#" target="_self">
+                    <div class="messages_class_icon">
+                        <span class="material-icons">inbox</span>
+                    </div>
+                    <div class="messages_class_text">
+                        <div>
+                            <h5 class="messages_class_label">Primary</h5>
+                            <div class="tooltip none">
+                                <h6 class="number none">2</h6>
+                                <h6 class="new none">new</h6>
+                            </div>
+                        </div>
+                        
+                        <h6 class="messages_class_sublabel none">...</h6>
+                    </div>
+                </a> -->
+
+                <!-- <a class="messages_class_link" href="#" target="_self">
+                    <div class="messages_class_icon ">
+                        <span class="material-icons">group</span>
+                    </div>
+                    <div class="messages_class_text">
+                        <div>
+                            <h5 class="messages_class_label">Social</h5>
+                            <div class="tooltip azul">
+                                <h6 class="number">2</h6>
+                                <h6 class="new">new</h6>
+                            </div>
+                        </div>
+            
+                        <h6 class="messages_class_sublabel">Behance, Facebook</h6>
+                    </div>
+                </a>
+
+               
+                <a class="messages_class_link " href="#" target="_self">
+                    <div class="messages_class_icon">
+                        <span class="material-icons">local_offer</span>
+                    </div>
+                    <div class="messages_class_text">
+                        <div>
+                            <h5 class="messages_class_label">Promotions</h5>
+                            <div class="tooltip verde">
+                                <h6 class="number">1</h6>
+                                <h6 class="new">new</h6>
+                            </div>
+                        </div>
+            
+                        <h6 class="messages_class_sublabel">SkillShare</h6>
+                    </div>
+                </a> -->
+                
+            </div>
+           
+            <div class="messages">
+                <!-- <article class="message_item">
+                    <a class="message_item_link" href="#" target="_self">
+                        <div class="message_item_user">
+                            <img src="http://dummyimage.com/101x108.png/dddddd/000000">
+                        </div>
+                        <div class="message_item_text">
+                            <div class="first_row">
+                                <h3 class="user_name">Name Surname</h3>
+                                <span class="material-icons folder personal">folder</span>
+
+                                <span class="material-icons attached">attachment</span>
+                                <h6 class="timer">4:00 PM</h6>
+                            </div>
+                            <div class="second_row">
+                                <h4 class="topic">Message title</h4>
+                            </div>
+                            <div class="third_row">
+                                <h5 class="content grey">This is the message content. This is the message cont...</h5>
+                                <span class="material-icons fav">star</span>
+                                <span class="material-icons no-fav none">star_border</span>
+                            </div>
+                            
+                        </div>
+                    </a>
+                </article> -->
+            </div>
+            
+            
+        </aside>
+
+        <!--main-->
+        <main class="main">
+            <!-- <article class="message_card">
+                <header class="message_header">
+                    <div class="message_user">
+                        <span class="material-icons">account_circle</span>
+                    </div>
+                    <div class="from">
+                        <h6 class="grey"><a class="user_name">Name Surname</a></h6>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <div class="to">
+                        <h6 class="grey"> to <a class="user_name">name@gmail.com</a></h6>
+                    </div>
+                </header>
+
+                <div class="message_main">
+                    <h6 class="timer">Today, 1:25 PM</h6>
+                    <h1 class="title">Message title</h1>
+                    <h4 class="content">
+                        Lorem ipsum, <br><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptas nobis, perferendis voluptatem labore quae saepe tempore ipsam, officia quo ratione cupiditate. Eos nulla suscipit placeat assumenda eligendi, minus similique.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptas nobis, perferendis voluptatem labore quae saepe tempore ipsam, officia quo ratione cupiditate. Eos nulla suscipit placeat assumenda eligendi, minus similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptas nobis, perferendis voluptatem labore quae saepe tempore ipsam, officia quo ratione cupiditate. Eos nulla suscipit placeat assumenda eligendi, minus similique.<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptas nobis, perferendis voluptatem labore quae saepe tempore ipsam, officia quo ratione cupiditate. Eos nulla suscipit placeat assumenda eligendi, minus similique.
+                        <div class="image">
+                            <img src="assets/img/paisaje.jpg" alt="Paisaje montaña">
+                        </div>
+                        Lorem ipsum,<br>
+                        Lorem ipsum
+                    </h4>
+                </div>
+
+                <div class="message_reply">
+                    <form>
+                        <textarea class="reply"></textarea>
+                    </form>
+                    <div class="option_line">
+                        <div class="options">
+                            <span class="material-icons">format_underlined</span>
+                            <span class="material-icons rotate-90">attachment</span>
+                            <span class="material-icons">crop_original</span>
+                            <span class="material-icons rotate-45">link</span>
+                            <span class="material-icons">insert_emoticon</span>
+                        </div>
+                        <button type="button" class="reply_button"> 
+                            <h5 class="send">Send </h5>
+                            <span class="material-icons rotate180">keyboard_backspace</span>
+                        </button>
+
+                    </div>
+                </div>
+            </article> -->
+
+        </main>
+ 
+    </div>
+
+    <script src="./app/data.js"></script>
+    <script src="./app/main.js"></script>
+    
+</body>
+
+</html>

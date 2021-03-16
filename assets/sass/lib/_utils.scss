@@ -1,0 +1,32 @@
+.no_bullets {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.hidden{visibility: hidden;}
+.visible{visibility: visible;}
+.none{display: none;}
+
+.material-icons.folder{
+    &.work{color: $turquesa;}
+    &.personal{color: $marino;}
+    &.discounts{color: $morado;}
+}
+
+.material-icons.fav{color: $amarillo;}
+
+@mixin full_image {
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+}
+.rotate90{transform: rotate(90deg);}
+.rotate180{transform: rotate(180deg);}
+.rotate-90{transform: rotate(-90deg);}
+.rotate45{transform: rotate(45deg);}
+.rotate-45{transform: rotate(-45deg);}
+
+.read{opacity: 0.5;}
